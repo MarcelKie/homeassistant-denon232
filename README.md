@@ -5,10 +5,10 @@ As I only have my own device to test (AVR-3805), development focuses specificall
 This implementation is a fork of the original implementation by [bluepixel00](https://github.com/bluepixel00/HomeAssistant_Denon_RS232) and takes inspiration from other Home Assistant media player integrations.
 
 ## Setup:
-1) If not present create the `custom_components` folder structure under your Home Assistant config directory.
+1) If not present create the `custom_components` folder structure under your Home Assistant config directory:
 `config/custom_components/denon232/`
 
-2) Place `__init__.py`, `media_player.py`, `manifest.json` and `denon232_receiver.py` in the denon232 folder under the `custom components` folder.
+2) Place `__init__.py`, `media_player.py`, `manifest.json` and `denon232_receiver.py` in the denon232 folder under the `custom_components` folder.
 
 3) Add configuration details to configuration.yaml located in the config directory:
 
