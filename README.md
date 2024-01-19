@@ -15,11 +15,21 @@ This implementation is a fork of the original implementation by [bluepixel00](ht
 ```
 media_player:
   - platform: denon232
-    serial_port: socket://your.network.device:portnumber
+    serial_port: socket://IP.of.ser2net.server:portnumber
     name: Receiver
 ```
 
-The `serial_port` device referenced should be changed to match what is being used in your setup. In this example a USB to serial converter was used on a remote machine and exported through ser2net. A local USB device can also be used.
+The `serial_port` device referenced should be changed to match what is being used in your setup. In this example a USB to serial converter was used on a remote machine and exported through ser2net.
+
+A local USB device can also be used:
+
+```
+media_player:
+  - platform: denon232
+    serial_port: /dev/ttyUSB0
+    name: Receiver
+```
+
 
 ## Zones
 This integration supports multiple zones. Zones 2 and 3 are automagically detected when supported and added as additional `media_player` entities.
